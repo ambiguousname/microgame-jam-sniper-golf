@@ -23,12 +23,38 @@ public class SniperGolf_LevelGenerator : MonoBehaviour
     {
         grid = new SniperGolf_Segment[width, height];
 
+        bool holePlaced = false;
         for (int i = 0; i < width; i++)
             for (int j = 0; j < height; j++)
             {
+                SniperGolf_Segment newSegment = GetRandomSegment();
                 Vector3 position = new Vector3 (i * spacing, j * spacing, 0) + gridStart.position;
-                Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 4)*90f);
-                grid[i, j] = (SniperGolf_Segment) Instantiate(segmentOptions[Random.Range(0, segmentOptions.Length)], position, rotation);
+                Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(0, 4) * 90f);
+
+                while (newSegment.tag == "Hole" && holePlaced)
+                    newSegment = GetRandomSegment();
+                
+                if (i == width && j == height && !holePlaced)
+                    newSegment = GetHoleSegment();
+                
+                if (newSegment.tag == "Hole")
+                {
+                    // Hole must be upright
+                    rotation = Quaternion.Euler(0, 0, 0);
+                    holePlaced = true;
+                }
+
+                grid[i, j] = (SniperGolf_Segment) Instantiate(newSegment, position, rotation);
             }
+    }
+
+    private SniperGolf_Segment GetRandomSegment()
+    {
+        return segmentOptions[Random.Range(0, segmentOptions.Length)];
+    }
+
+    private SniperGolf_Segment GetHoleSegment()
+    {
+        return segmentOptions[0];
     }
 }

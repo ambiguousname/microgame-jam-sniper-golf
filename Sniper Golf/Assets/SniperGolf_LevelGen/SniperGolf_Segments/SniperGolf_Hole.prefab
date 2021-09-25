@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3847398076577382306}
   - component: {fileID: 3847398076577382308}
   m_Layer: 0
-  m_Name: SniperGolf_Grass 2
-  m_TagString: Untagged
+  m_Name: SniperGolf_Hole
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c6709a7a81a744e41b6d85f88ee6d74d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c7981ef900e24e9394c24608470b731, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
