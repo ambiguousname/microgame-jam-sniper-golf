@@ -34,7 +34,7 @@ public class SniperGolf_LevelGenerator : MonoBehaviour
                 while (newSegment.tag == "Hole" && holePlaced)
                     newSegment = GetRandomSegment();
                 
-                if (i == width && j == height && !holePlaced)
+                if (i == width-1 && j == height-1 && !holePlaced)
                     newSegment = GetHoleSegment();
                 
                 if (newSegment.tag == "Hole")
