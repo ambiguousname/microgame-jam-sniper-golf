@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class SniperGolf_Player : MonoBehaviour
 {
     [SerializeField] public Vector2 speed = new Vector2(0,0);
     // Start is called before the first frame update
