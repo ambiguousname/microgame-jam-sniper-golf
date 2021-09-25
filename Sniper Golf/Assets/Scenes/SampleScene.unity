@@ -372,30 +372,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1384195620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7347697664424471880, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
-  m_PrefabInstance: {fileID: 7347697665255000940}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1384195621 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7347697664424471881, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
   m_PrefabInstance: {fileID: 7347697665255000940}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1384195622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384195620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6889101eac4845549bebd0c872730314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startX: {fileID: 0}
-  endX: {fileID: 0}
 --- !u!1001 &7347697665255000940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -403,6 +384,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 771481388}
     m_Modifications:
+    - target: {fileID: 2219402133269160400, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7347697664424471880, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
       propertyPath: m_Name
       value: SniperGolf_PowerMinigame
@@ -494,6 +479,14 @@ PrefabInstance:
     - target: {fileID: 7347697665586239440, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
       propertyPath: m_Name
       value: StartY
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143381713323403418, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143381713323403418, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
