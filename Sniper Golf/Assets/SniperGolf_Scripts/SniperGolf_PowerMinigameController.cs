@@ -25,6 +25,8 @@ public class SniperGolf_PowerMinigameController : MonoBehaviour
     /// </summary>
     public UnityEventGetFloat hitSpace = new UnityEventGetFloat();
 
+    public UnityEventGetFloat hitSpaceUpdate = new UnityEventGetFloat();
+
     /// <summary>
     /// How fast the slider should be going every frame.
     /// </summary>
@@ -67,6 +69,7 @@ public class SniperGolf_PowerMinigameController : MonoBehaviour
                 isGoingDown = true;
             }
         }
+        hitSpaceUpdate.Invoke(powerProgress);
 
         if (Input.GetKeyDown("space")) {
             hitSpace.Invoke(powerProgress);

@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51260612328650076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.54, y: -0.09, z: 0}
+  m_LocalPosition: {x: 1.54, y: -0.09, z: -0.061}
   m_LocalScale: {x: 0.09460893, y: 0.09460893, z: 0.09460893}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,6 +100,7 @@ MonoBehaviour:
   player: {fileID: 0}
   powerMinigame: {fileID: 0}
   ballHitSpeed: 100
+  canHit: 0
 --- !u!50 &3952566441210846889
 Rigidbody2D:
   serializedVersion: 4
