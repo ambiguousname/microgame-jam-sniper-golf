@@ -405,18 +405,6 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 51260612328650066, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 51260612328650066, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 51260612328650066, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 51260612328650066, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -458,6 +446,54 @@ PrefabInstance:
       objectReference: {fileID: 1304540935}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
+--- !u!114 &51260611491545900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5213577306108496415, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
+  m_PrefabInstance: {fileID: 51260611491545899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c585c320adf6ef845a39cabafa9faec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2630104975619007441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 312841130194065066, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: clubPosition
+      value: 
+      objectReference: {fileID: 5055819248344812047}
+    - target: {fileID: 312841130194065066, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: golfController
+      value: 
+      objectReference: {fileID: 51260611491545900}
+    - target: {fileID: 2630104974277811630, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104974277811630, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104974277811630, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104974277811630, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104974277811631, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+      propertyPath: m_Name
+      value: SniperGolf_clubcontroller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
 --- !u!1001 &5055819248344812046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -475,6 +511,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a6e0ed783a5c1548b92bb543cd3c7f7, type: 3}
+--- !u!4 &5055819248344812047 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 881011286810348249, guid: 9a6e0ed783a5c1548b92bb543cd3c7f7, type: 3}
+  m_PrefabInstance: {fileID: 5055819248344812046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7347697665255000940
 PrefabInstance:
   m_ObjectHideFlags: 0
