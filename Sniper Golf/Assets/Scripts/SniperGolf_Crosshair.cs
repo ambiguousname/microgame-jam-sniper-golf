@@ -6,16 +6,36 @@ public class SniperGolf_Crosshair : MonoBehaviour
 {
     private GameObject player;
     private Vector3 playerPos;
+    private bool isAiming;
+    [SerializeField] private Collider2D hitbox;
+    [SerializeField] private Collider2D hurtbox;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        EventManager.OnShoot += Shoot;
+        isAiming = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        playerPos = new Vector3(player.transform.position.x, player.transform.position.y, 0);
-        this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, 3f * Time.deltaTime);
+        if (isAiming)
+        {
+            playerPos = new Vector3(player.transform.position.x, player.transform.position.y, 0);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, 1f * Time.deltaTime);
+        }
+    }
+
+    void Shoot()
+    {
+        //pause movement for a bit
+
+        //check if intersecting with player
+        if (hitbox.bounds.Intersects(hurtbox.bounds))
+        {
+            Debug.Log("Bounds intersecting");
+        }
     }
 }
