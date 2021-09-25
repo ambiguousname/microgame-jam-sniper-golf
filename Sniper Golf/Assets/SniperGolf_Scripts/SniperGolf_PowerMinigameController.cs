@@ -23,7 +23,7 @@ public class SniperGolf_PowerMinigameController : MonoBehaviour
     /// <summary>
     /// For other scripts to get a callback from if the space key was hit.
     /// </summary>
-    public UnityEventGetFloat hitSpace;
+    public UnityEventGetFloat hitSpace = new UnityEventGetFloat();
 
     /// <summary>
     /// How fast the slider should be going every frame.
@@ -39,7 +39,6 @@ public class SniperGolf_PowerMinigameController : MonoBehaviour
     private void Start()
     {
         progressSlider = GetComponentInChildren<Slider>();
-        hitSpace = new UnityEventGetFloat();
         fillImage = progressSlider.fillRect.GetComponent<Image>();
     }
 
