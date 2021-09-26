@@ -7,7 +7,9 @@ public class SniperGolf_Crosshair : MonoBehaviour
     public GameObject player;
     public AudioSource aimSound;
     public AudioSource fireSound;
-    public float sniperDistance = 2.0f;
+    public float sniperDistance = 0.5f;
+    Vector3 startScale;
+    bool zoomIn = false;
 
     private Vector3 playerPos;
     private bool isAiming;
@@ -16,6 +18,19 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Start()
     {
         isAiming = true;
+        startScale = this.transform.localScale;
+    }
+
+    IEnumerator Aim() {
+        zoomIn = true;
+        isAiming = false;
+        aimSound.Play();
+        while (aimSound.isPlaying)
+        {
+            yield return null;
+        }
+        zoomIn = false;
+        Shoot();
     }
 
     // Update is called once per frame
@@ -26,7 +41,17 @@ public class SniperGolf_Crosshair : MonoBehaviour
             playerPos = new Vector3(player.transform.position.x, player.transform.position.y, this.transform.position.z);
             this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, 1f * Time.deltaTime);
             if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance) {
-                aimSound.Play();
+                StartCoroutine(Aim());
+            }
+        }
+        if (zoomIn)
+        {
+            this.transform.localScale -= Vector3.one * Time.deltaTime * 0.1f;
+        }
+        else {
+            if (this.transform.localScale.magnitude < startScale.magnitude)
+            {
+                this.transform.localScale += Vector3.one * Time.deltaTime;
             }
         }
     }
@@ -34,6 +59,12 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Shoot()
     {
         fireSound.Play();
-        GameController.Instance.LoseGame();
+        if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance)
+        {
+            GameController.Instance.LoseGame();
+        }
+        else {
+            isAiming = true;
+        }
     }
 }

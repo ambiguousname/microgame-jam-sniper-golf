@@ -451,6 +451,7 @@ MonoBehaviour:
   player: {fileID: 0}
   aimSound: {fileID: 3691435284846424486}
   fireSound: {fileID: 7142685348161904495}
+  sniperDistance: 0.5
 --- !u!1 &8807655953159888668
 GameObject:
   m_ObjectHideFlags: 0
