@@ -7,6 +7,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     public GameObject player;
     public AudioSource aimSound;
     public AudioSource fireSound;
+    public AudioSource loseSound;
     public SniperGolf_Shake cameraShake;
     public float sniperDistance = 0.5f;
     Vector3 startScale;
@@ -60,6 +61,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Shoot()
     {
         fireSound.Play();
+        loseSound.Play();
         cameraShake.ShakeCamera(0.05f, 0.001f);
         if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance)
         {
