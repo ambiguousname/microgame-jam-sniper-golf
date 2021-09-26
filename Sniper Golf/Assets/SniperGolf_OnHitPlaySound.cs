@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnHitPlaySound : MonoBehaviour
+public class SniperGolf_OnHitPlaySound : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D other) {
         GetComponent<AudioSource>().Play();
