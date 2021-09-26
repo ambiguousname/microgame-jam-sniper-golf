@@ -24,7 +24,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     {
         if (isAiming)
         {
-            playerPos = new Vector3(player.transform.position.x, player.transform.position.y, 0);
+            playerPos = new Vector3(player.transform.position.x, player.transform.position.y, this.transform.position.z);
             this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, 1f * Time.deltaTime);
         }
     }
