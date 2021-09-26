@@ -642,143 +642,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50c186f376fa2f741a9ee56e3821b2e9, type: 3}
---- !u!1001 &1133234830
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1957828105686509319, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828105720526963, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828105796312528, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828105800651440, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828105963665403, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106069048008, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106106670637, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106284112285, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106450677114, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106476186495, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106543811707, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106747977281, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106815039239, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106894441494, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828106942368871, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828107174698843, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828107323025927, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828107504651794, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828107574744544, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957828107764866382, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Side17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5618007379101739968, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_Name
-      value: SniperGolf_Sides
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.6278994
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.0777062
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.4863114
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8080466275454033022, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
 --- !u!1 &1241677085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2630104974277811631, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
@@ -973,6 +836,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c585c320adf6ef845a39cabafa9faec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &331851731991940734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5291116679857729328, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_Name
+      value: SniperGolf_Sides
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6278994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.0777062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.4863114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410872697995106446, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5608f07cb1ca2430f894d66a0922576b, type: 3}
 --- !u!1001 &568885716217680763
 PrefabInstance:
   m_ObjectHideFlags: 0
