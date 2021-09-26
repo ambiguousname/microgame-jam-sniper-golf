@@ -10,6 +10,7 @@ public class SniperGolf_Laser : MonoBehaviour
     void Start()
     {
         crosshair = GameObject.Find("Crosshair").transform;
+        Debug.Log(GameController.Instance.gameDifficulty);
     }
 
     // Update is called once per frame

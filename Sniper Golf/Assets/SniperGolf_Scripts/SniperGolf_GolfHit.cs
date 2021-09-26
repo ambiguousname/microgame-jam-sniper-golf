@@ -30,7 +30,6 @@ public class SniperGolf_GolfHit : MonoBehaviour
         dir.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         if (Input.GetKeyDown("space") && canHit) {
             powerMinigame.gameObject.SetActive(true);
-            powerMinigame.transform.position = player.transform.position;
             player.GetComponent<SniperGolf_PlayerController>().inputEnabled = false;
         }
     }
