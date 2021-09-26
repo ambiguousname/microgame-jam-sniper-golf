@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3847398076577382308}
   - component: {fileID: 2371791781199847869}
   - component: {fileID: 3965642823708627063}
+  - component: {fileID: 6312092285446636323}
   m_Layer: 0
   m_Name: SniperGolf_Hole
   m_TagString: Hole
@@ -119,9 +120,21 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.005, y: -0.02}
   serializedVersion: 2
   m_Radius: 0.07
+--- !u!114 &6312092285446636323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3847398076577382305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d51bb1047422c41930abb15c87b4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
