@@ -22,16 +22,16 @@ public class SniperGolf_EventManager : MonoBehaviour
     {
         shootTimer -= Time.deltaTime;
         aimTimer -= Time.deltaTime;
-        if (aimTimer <= 0)
+        if (aimTimer <= 0 && aimTimer > -1)
         {
             aim.Play();
+            aimTimer = -1;
         }
         if (shootTimer <= 0)
         {
-            Debug.Log("Shooting");
-            OnShoot();
             shootTimer = 4f;
             aimTimer = 2f;
+            OnShoot();
         }
     }
 }
