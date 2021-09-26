@@ -34,7 +34,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
         shoot.Play();
         //pause movement for a bit
         //check if intersecting with player
-        if (hitbox.bounds.Intersects(hurtbox.bounds))
+        if (Vector3.Distance(hitbox.transform.position, hurtbox.transform.position) < 0.5f)
         {
             GameController.Instance.LoseGame();
             //die if true
