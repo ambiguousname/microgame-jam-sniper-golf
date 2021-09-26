@@ -556,6 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92cc3fdd608f94db19aadef8f3a83b73, type: 3}
+--- !u!1 &1241677085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2630104974277811631, guid: 7608296e7bd67ae4595c758cb20bf89e, type: 3}
+  m_PrefabInstance: {fileID: 2630104975619007441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1304540935 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 860355465544186363, guid: e111355f262c94f4e8a4a8e9e80ec911, type: 3}
@@ -615,6 +620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SniperGolf_golfball
       objectReference: {fileID: 0}
+    - target: {fileID: 5213577306108496415, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
+      propertyPath: club
+      value: 
+      objectReference: {fileID: 1241677085}
     - target: {fileID: 5213577306108496415, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
       propertyPath: player
       value: 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SniperGolf_GolfHit : MonoBehaviour
 {
     public GameObject player;
+    public GameObject club;
     public SniperGolf_PowerMinigameController powerMinigame;
     public float ballHitSpeed = 10;
     public bool canHit;
@@ -28,7 +29,7 @@ public class SniperGolf_GolfHit : MonoBehaviour
     }
 
     void BallHit(float strength) {
-        ballRigidbody.AddForceAtPosition(strength * ballHitSpeed * (this.transform.position - player.transform.position).normalized, player.transform.position);
+        ballRigidbody.AddForceAtPosition(strength * ballHitSpeed * (this.transform.position - club.transform.position).normalized, club.transform.position);
         player.GetComponent<SniperGolf_PlayerController>().inputEnabled = true;
     }
 }
