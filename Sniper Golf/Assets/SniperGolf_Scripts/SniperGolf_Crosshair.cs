@@ -80,7 +80,10 @@ public class SniperGolf_Crosshair : MonoBehaviour
         cameraShake.ShakeCamera(0.05f, 0.001f);
         if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance)
         {
-            GameController.Instance.LoseGame();
+            player.GetComponent<SniperGolf_PlayerController>().inputEnabled = false;
+            cameraShake.ShakeCamera(1, 5);
+            isAiming = false;
+            player.GetComponent<SniperGolf_PlayerController>().EndGame();
         }
     }
 }

@@ -53,4 +53,17 @@ public class SniperGolf_PlayerController : MonoBehaviour
             eyes.transform.localPosition = new Vector3(normalVelocity.x * 0.5f * Mathf.Abs(outsideRest.x), normalVelocity.y * 0.5f * Mathf.Abs(outsideRest.y), 0);
         }
     }
+
+    public void EndGame() {
+        GetComponent<ParticleSystem>().Play();
+        StartCoroutine(WaitForEnd());
+    }
+
+    IEnumerator WaitForEnd() {
+        yield return new WaitForSeconds(1);
+        if (GameController.Instance.timerOn)
+        {
+            GameController.Instance.LoseGame();
+        }
+    }
 }
