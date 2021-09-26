@@ -61,10 +61,10 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Shoot()
     {
         fireSound.Play();
-        loseSound.Play();
         cameraShake.ShakeCamera(0.05f, 0.001f);
         if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance)
         {
+            loseSound.Play();
             GameController.Instance.LoseGame();
         }
         else {
