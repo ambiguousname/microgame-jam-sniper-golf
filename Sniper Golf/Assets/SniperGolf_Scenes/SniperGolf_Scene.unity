@@ -411,9 +411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c72ec2c64e4eb964592e899f55a3f878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
-  shakeAmount: 0
-  shakeDuration: 0
+  debugMode: 1
+  shakeAmount: 0.01
+  shakeDuration: 0.01
   smooth: 0
   smoothAmount: 5
 --- !u!20 &519420031
@@ -723,6 +723,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2710994885807218617, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 59.45149
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710994885807218617, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 175.38571
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710994885807218617, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.175904
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710994885807218617, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 231.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8807655952992342736, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.91
@@ -735,6 +751,10 @@ PrefabInstance:
       propertyPath: hurtbox
       value: 
       objectReference: {fileID: 461652665}
+    - target: {fileID: 8807655952992342740, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 519420030}
     - target: {fileID: 8807655953159888674, guid: 1f7b17c335a789f46a8c0ccd927bb305, type: 3}
       propertyPath: endPoint
       value: 
@@ -848,6 +868,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5213577306108496415, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 519420030}
     - target: {fileID: 5213577306108496415, guid: 8f2637c75f7c23a4f8f49cf2439e8cd6, type: 3}
       propertyPath: powerMinigame
       value: 
