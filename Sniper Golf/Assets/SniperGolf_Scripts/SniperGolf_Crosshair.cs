@@ -15,7 +15,6 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("player");
-        SniperGolf_EventManager.OnShoot += Shoot;
         isAiming = true;
     }
 
