@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3b9d9681603aeceb862db9d8540824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameDifficultySlider: 1
+  gameDifficultySlider: 3
   fadeOutSimulation: {fileID: 8433615087647459164}
 --- !u!1001 &7752564255622863103
 PrefabInstance:
