@@ -25,6 +25,7 @@ public class SniperGolf_Laser : MonoBehaviour
 
     void Shoot()
     {
-
+        //make it transparent
+        this.GetComponent<Material>().color = new Color(0, 0, 0, 0);
     }
 }
