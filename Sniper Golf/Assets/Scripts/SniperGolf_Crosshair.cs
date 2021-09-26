@@ -14,7 +14,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("player");
         EventManager.OnShoot += Shoot;
         isAiming = true;
     }
