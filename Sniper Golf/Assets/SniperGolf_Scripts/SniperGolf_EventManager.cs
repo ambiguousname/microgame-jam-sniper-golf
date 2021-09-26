@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventManager : MonoBehaviour
+public class SniperGolf_EventManager : MonoBehaviour
 {
     public delegate void ShootAction();
     public static event ShootAction OnShoot;

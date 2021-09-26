@@ -15,7 +15,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("player");
-        EventManager.OnShoot += Shoot;
+        SniperGolf_EventManager.OnShoot += Shoot;
         isAiming = true;
     }
 
@@ -36,6 +36,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
         //check if intersecting with player
         if (hitbox.bounds.Intersects(hurtbox.bounds))
         {
+            GameController.Instance.LoseGame();
             //die if true
             //also I'll add a sound effect
             Debug.Log("Bounds intersecting");
