@@ -62,6 +62,7 @@ public class SniperGolf_PowerMinigameController : MonoBehaviour
             if (powerProgress <= 0) {
                 isGoingDown = false;
                 gameObject.SetActive(false);
+                hitSpace.Invoke(0);
             }
         } else {
             powerProgress += Time.deltaTime * sliderSpeed;
