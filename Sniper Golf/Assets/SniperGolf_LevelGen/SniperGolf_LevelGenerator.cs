@@ -7,7 +7,10 @@ public class SniperGolf_LevelGenerator : MonoBehaviour
 {
     private SniperGolf_Segment[,] grid;
 
-    [SerializeField] private SniperGolf_Segment[] segmentOptions;
+    private SniperGolf_Segment[] segmentOptions;
+    [SerializeField] private SniperGolf_Segment[] hardSegmentOptions;
+    [SerializeField] private SniperGolf_Segment[] mediumSegmentOptions;
+    [SerializeField] private SniperGolf_Segment[] easySegmentOptions;
 
     [SerializeField] private int width = 4;
     [SerializeField] private int height = 3;
@@ -16,6 +19,7 @@ public class SniperGolf_LevelGenerator : MonoBehaviour
 
     private void Start()
     {
+        SetDifficulty();
         Generate();
     }
 
@@ -56,5 +60,15 @@ public class SniperGolf_LevelGenerator : MonoBehaviour
     private SniperGolf_Segment GetHoleSegment()
     {
         return segmentOptions[0];
+    }
+
+    private void SetDifficulty()
+    {
+        if (GameController.Instance.gameDifficulty == 1)
+            segmentOptions = easySegmentOptions;
+        else if (GameController.Instance.gameDifficulty == 2)
+            segmentOptions = mediumSegmentOptions;
+        else
+            segmentOptions = hardSegmentOptions;
     }
 }
