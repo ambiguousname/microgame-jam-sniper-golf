@@ -24,7 +24,6 @@ public class SniperGolf_Crosshair : MonoBehaviour
 
     IEnumerator Aim() {
         zoomIn = true;
-        isAiming = false;
         aimSound.Play();
         while (aimSound.isPlaying)
         {
@@ -41,7 +40,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
         {
             playerPos = new Vector3(player.transform.position.x, player.transform.position.y, this.transform.position.z);
             this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos, 1f * Time.deltaTime);
-            if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance) {
+            if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance && !zoomIn) {
                 StartCoroutine(Aim());
             }
         }
@@ -64,9 +63,6 @@ public class SniperGolf_Crosshair : MonoBehaviour
         if (Vector2.Distance(player.transform.position, this.transform.position) < sniperDistance)
         {
             GameController.Instance.LoseGame();
-        }
-        else {
-            isAiming = true;
         }
     }
 }
