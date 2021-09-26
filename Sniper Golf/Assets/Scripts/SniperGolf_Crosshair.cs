@@ -9,6 +9,7 @@ public class SniperGolf_Crosshair : MonoBehaviour
     private bool isAiming;
     [SerializeField] private Collider2D hitbox;
     [SerializeField] private Collider2D hurtbox;
+    [SerializeField] private AudioSource shoot;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +31,13 @@ public class SniperGolf_Crosshair : MonoBehaviour
 
     void Shoot()
     {
+        shoot.Play();
         //pause movement for a bit
-
         //check if intersecting with player
         if (hitbox.bounds.Intersects(hurtbox.bounds))
         {
+            //die if true
+            //also I'll add a sound effect
             Debug.Log("Bounds intersecting");
         }
     }
